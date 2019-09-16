@@ -6,15 +6,14 @@ namespace ChallengesWithTestsMark8
     {
         public bool AreTwoNumbersTheSame(int num1, int num2)
         {
-            //clean up your formatting with the curly braces
             if (num1 == num2)
-                {
+            {
                 return true;
-                }
+            }
             else
-                {
+            {
                 return false;
-                }
+            }
         }
 
         public double Subtract(double minuend, double subtrahend)
