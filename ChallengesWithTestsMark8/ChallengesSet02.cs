@@ -11,10 +11,7 @@ namespace ChallengesWithTestsMark8
 			{
 				return true;
 			}
-			else
-			{
-				return false;
-			}
+            return false;
         }
 
         public bool CountOfElementsIsEven(string[] vals)
@@ -23,35 +20,26 @@ namespace ChallengesWithTestsMark8
             {
                 return true;
             }
-            else
-            {
-                return false;
-            }
+            return false;
         }
 
         public bool IsNumberEven(int number)
         {
-			if (number % 2 == 0)
-			{
-				return true;
-			}
-			else
-			{
-				return false;
-			}
-		}
+            if (number % 2 == 0)
+            {
+                return true;
+            }
+            return false;
+        }
 
         public bool IsNumberOdd(int num)
         {
-			if (num % 2 != 0)
-			{
-				return true;
-			}
-			else
-			{
-				return false;
-			}
-		}
+            if (num % 2 != 0)
+            {
+                return true;
+            }
+            return false;
+        }
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
         {
