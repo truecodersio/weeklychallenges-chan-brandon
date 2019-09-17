@@ -91,10 +91,6 @@ namespace ChallengesWithTestsMark8
             {
                 sums += numbers[i];
             }
-            if (numbers == null)
-            {
-                return 0;
-            }
             return sums;
         }
 
