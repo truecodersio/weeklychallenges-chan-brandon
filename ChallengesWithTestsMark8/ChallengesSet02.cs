@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace ChallengesWithTestsMark8
@@ -43,31 +44,37 @@ namespace ChallengesWithTestsMark8
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
         {
-            double num = -100d;
-            double num2 = 100d;
-            double max = 0d;
-            double min = 0d;
+            // commented out inefficient code for refactored code using System.Linq
+            // let me know if the challenge was for loops or if you just wanted the easiest way
+
+            if (numbers == null || !numbers.Any())
+            {
+                return 0;
+            }
+            return numbers.Min() + numbers.Max();
+
+         /* double max = Double.MinValue;
+            double min = Double.MaxValue;
             if (numbers == null)
             {
                 return 0;
             }
+
             foreach (double value in numbers)
             {
-                if (num < value)
+                if (max < value)
                 {
-                    num = value;
-                    max = num;
+                    max = value;
                 }
             }
             foreach (double value in numbers)
 
-            {   if (num2 > value)
+            {   if (min > value)
                 {
-                    num2 = value;
-                    min = num2;
+                    min = value;
                 }
             }
-            return min + max;
+            return min + max; */
 
         }
 
