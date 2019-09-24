@@ -21,12 +21,12 @@ namespace ChallengesWithTestsMark8
         public bool IsSumOfOddsOdd(IEnumerable<int> numbers)
         {
             int store = 0;
+            if (numbers == null)
+            {
+                return false;
+            }
             foreach (int num in numbers)
             {
-                if (numbers == null)
-                {
-                    return false;
-                }
                 if (num % 2 != 0)
                 {
                     store += num;
@@ -63,6 +63,10 @@ namespace ChallengesWithTestsMark8
 
         public decimal Divide(decimal dividend, decimal divisor)
         {
+            if (divisor == 0)
+            {
+                return 0;
+            }
             return dividend / divisor;
         }
 
@@ -89,9 +93,9 @@ namespace ChallengesWithTestsMark8
 
         public void ChangeAllElementsToUppercase(string[] words)
         {
-            foreach (var word in words)
+            for (int i = 0; i < words.Length; i++)
             {
-                Console.WriteLine(word.ToUpper());
+                words[i] = words[i].ToUpper();
             }
         }
     }
