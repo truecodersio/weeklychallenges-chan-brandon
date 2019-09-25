@@ -93,13 +93,10 @@ namespace ChallengesWithTestsMark8
 
         public void ChangeAllElementsToUppercase(string[] words)
         {
-            var i = 0;
-            foreach (string word in words)
+            for (int i = 0; i < words.Length; i++)
             {
-                words[i] = word.ToUpper();
-                i++;
+                words[i] = words[i].ToUpper();
             }
-
         }
     }
 }
