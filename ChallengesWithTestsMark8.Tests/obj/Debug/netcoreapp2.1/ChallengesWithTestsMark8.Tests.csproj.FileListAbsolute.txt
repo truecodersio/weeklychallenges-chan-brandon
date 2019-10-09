@@ -60,7 +60,6 @@ C:/Users/Chip/source/repos/Mark8ChallengesWithTests/ChallengesWithTestsMark8.Tes
 /Users/computer/Desktop/repos/weeklychallenges-chan-brandon/ChallengesWithTestsMark8.Tests/bin/Debug/netcoreapp2.1/ChallengesWithTestsMark8.dll
 /Users/computer/Desktop/repos/weeklychallenges-chan-brandon/ChallengesWithTestsMark8.Tests/bin/Debug/netcoreapp2.1/ChallengesWithTestsMark8.pdb
 /Users/computer/Desktop/repos/weeklychallenges-chan-brandon/ChallengesWithTestsMark8.Tests/obj/Debug/netcoreapp2.1/ChallengesWithTestsMark8.Tests.csprojAssemblyReference.cache
-/Users/computer/Desktop/repos/weeklychallenges-chan-brandon/ChallengesWithTestsMark8.Tests/obj/Debug/netcoreapp2.1/ChallengesWithTestsMark8.Tests.csproj.CoreCompileInputs.cache
 /Users/computer/Desktop/repos/weeklychallenges-chan-brandon/ChallengesWithTestsMark8.Tests/obj/Debug/netcoreapp2.1/ChallengesWithTestsMark8.Tests.AssemblyInfoInputs.cache
 /Users/computer/Desktop/repos/weeklychallenges-chan-brandon/ChallengesWithTestsMark8.Tests/obj/Debug/netcoreapp2.1/ChallengesWithTestsMark8.Tests.AssemblyInfo.cs
 /Users/computer/Desktop/repos/weeklychallenges-chan-brandon/ChallengesWithTestsMark8.Tests/obj/Debug/netcoreapp2.1/ChallengesWithTestsMark8.Tests.csproj.CopyComplete
