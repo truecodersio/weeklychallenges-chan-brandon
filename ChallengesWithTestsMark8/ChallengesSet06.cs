@@ -60,49 +60,97 @@ namespace ChallengesWithTestsMark8
                 return 0;
             }
 
-            var isSameChar = str.All(c => c == str[0]);
+            var allCharSame = str.All(c => c == str[0]);
 
-            if (isSameChar == true)
+            if (allCharSame == true)
             {
                 return -1;
             }
 
-            var counter = -1;
+            char result = 'a';
             var count = 0;
-            int temp = 0;
-            char character = 'a';
+
             for (int i = 0; i < str.Length; i++)
             {
-                for (int k = 0; k < str.Length; k++)
+                if (str.LastIndexOf(str[i]) == str.IndexOf(str[i]))
                 {
-                    if (str[i] == str[k])
-                    {
-                        counter++;
-                        character = str[i];
-                        temp = counter;
-                    }
-                    else if (str[i] != str[k])
-                    {
-                        if (temp > count)
-                        {
-                            count = temp;
-                        }
-                        counter = 0;
-                        break;
-                    }
+                    result = str[i];
+                    count++;
                 }
             }
-            return count;
+
+            if (count > 1)
+            {
+                for (int p = str.Length - 1; p <= 0; p--)
+                {
+                    return str.IndexOf(str[p]);
+                }
+            }
+
+            for (int k = 0; k < str.Length; k++)
+            {
+                if (str.Length == 2)
+                {
+                    return 1;
+                }
+                if (str[k] == result)
+                {
+                    return str.IndexOf(str[k]);
+                }
+            }
+            return 0;
         }
+
+
 
         public int MaxConsecutiveCount(int[] numbers)
         {
-            throw new NotImplementedException();
+            if (numbers == null || numbers.Length == 0)
+            {
+                return 0;
+            }
+
+            int constant = numbers[0];
+            int counter = 1;
+            int total = 0;
+
+            for (int i = 1; i < numbers.Length; i++)
+            {
+                if (numbers[i] == constant)
+                {
+                    counter++;
+                }
+                if (numbers[i] != constant)
+                {
+                    counter = 1;
+                }
+                if (counter > total)
+                {
+                    total = counter;
+                }
+                constant = numbers[i];
+            }
+            return total;
         }
 
         public double[] GetEveryNthElement(List<double> elements, int n)
         {
-            throw new NotImplementedException();
+            var newList = new List<double>();
+            var newArray = new double[0];
+
+            if (elements == null || n < 0)
+            {
+                return newArray;
+            }
+
+            for (int i = 1; i <= elements.Count; i++)
+            {
+                if (i % n == 0)
+                {
+                    newList.Add(elements[i - 1]);
+                }
+            }
+            return newList.ToArray();
         }
     }
 }
